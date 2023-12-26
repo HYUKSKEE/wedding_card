@@ -42,8 +42,6 @@ function App() {
     return <FullScreenMessage type="error" />
   }
 
-  // return <FullScreenMessage type="loading" />
-  // return <FullScreenMessage type="error" />
   return <div className={cx('container')}>{JSON.stringify(weddingData)}</div>
 }
 
