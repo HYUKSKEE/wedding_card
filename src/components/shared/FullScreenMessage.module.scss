@@ -1,0 +1,45 @@
+.container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-loading {
+  width: 10%;
+  height: 10%;
+
+  fill: var(--red);
+  animation: heart 0.8s infinite;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  35% {
+    transform: scale(0.85);
+  }
+  65% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+.icon-error {
+  width: 20%;
+  height: 20%;
+}
