@@ -4,10 +4,14 @@ import classNames from 'classnames/bind'
 import styles from './App.module.scss'
 import FullScreenMessage from './components/shared/FullScreenMessage'
 
+import { Wedding } from './models/wedding'
+import Video from './components/sections/Video'
+import Heading from './components/sections/Heading'
+
 const cx = classNames.bind(styles)
 
 function App() {
-  const [weddingData, setWeddingData] = useState(null)
+  const [weddingData, setWeddingData] = useState<Wedding | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -42,8 +46,20 @@ function App() {
     return <FullScreenMessage type="error" />
   }
 
+  if (weddingData == null) {
+    return
+  }
+
+  const { date } = weddingData
+
   //test
-  return <div className={cx('container')}>{JSON.stringify(weddingData)}</div>
+  return (
+    <div className={cx('container')}>
+      <Heading date={date} />
+      <Video />
+      {JSON.stringify(weddingData)}
+    </div>
+  )
 }
 
 export default App
