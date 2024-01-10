@@ -6,6 +6,7 @@
   .wrap-image {
     width: 100%;
     position: relative;
+    cursor: pointer;
 
     &::after {
       display: block;

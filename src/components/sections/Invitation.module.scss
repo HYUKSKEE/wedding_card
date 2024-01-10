@@ -1,0 +1,11 @@
+@import '../../scss/utils.scss';
+
+.container {
+  @include text-content;
+  margin: 80px 0px 8px;
+
+  .post-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

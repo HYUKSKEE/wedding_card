@@ -1,0 +1,33 @@
+@import '../../scss/utils.scss';
+
+.container {
+  @include text-content;
+
+  .wrap-persons {
+    margin: 40px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+
+    .heart-icon {
+      fill: var(--red);
+      width: 20px;
+      height: 20px;
+      margin: 0 8px;
+    }
+  }
+
+  .flower-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .wrap-location {
+    margin: 12px 0px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}

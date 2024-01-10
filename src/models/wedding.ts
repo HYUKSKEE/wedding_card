@@ -7,7 +7,7 @@ export interface Wedding {
   attendCount: number
 
   groom: Person & { person: Person[] }
-  bridge: Person & { person: Person[] }
+  bride: Person & { person: Person[] }
 }
 
 export interface Location {
