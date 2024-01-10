@@ -12,7 +12,7 @@ function Video() {
         muted={true}
         loop={true}
         controls={true}
-        poster="/assets/poster.jpg"
+        poster="/assets/images/poster.jpg"
       >
         <source src="/assets/main.mp4" type="video/mp4"></source>
       </video>
