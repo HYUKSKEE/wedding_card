@@ -1,6 +1,47 @@
+.wrap-header {
+  display: flex;
+  flex-direction: column;
+
+  .text-title {
+    margin-bottom: 16px;
+  }
+
+  .text-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
 .wrap-map {
+  position: relative;
+
   .map {
     width: 100%;
     height: 250px;
+  }
+
+  .button-find-way {
+    border: 1px solid var(--black);
+    padding: 8px 32px;
+    z-index: 2;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: var(--black);
+    text-decoration: none;
+    border-radius: 32px;
+  }
+}
+
+.wrap-way-to-come {
+  margin: 16px 0;
+  line-height: 1.3;
+
+  .text-label {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
   }
 }

@@ -8,5 +8,5 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "eslint.nodePath": ".yarn/sdks",
   "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
-  "cSpell.words": ["kakao"]
+  "cSpell.words": ["kakao", "waytocome"]
 }
