@@ -6,8 +6,8 @@ export interface Wedding {
   galleryImages: string[]
   attendCount: number
 
-  groom: Person & { person: Person[] }
-  bride: Person & { person: Person[] }
+  groom: Person & { parents: Person[] }
+  bride: Person & { parents: Person[] }
 }
 
 export interface Location {

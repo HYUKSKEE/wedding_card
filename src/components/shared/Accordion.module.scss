@@ -1,0 +1,35 @@
+.wrap-accordion {
+  margin-bottom: 20px;
+
+  .wrap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--beige);
+    cursor: pointer;
+
+    .icon-arrow-down {
+      width: 20px;
+      height: 20px;
+      //transform: rotate(-180deg);
+    }
+  }
+
+  .wrap-content {
+    display: none;
+  }
+}
+
+.wrap-accordion.open {
+  .wrap-header {
+    .icon-arrow-down {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .wrap-content {
+    display: block;
+  }
+}
