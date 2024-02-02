@@ -8,7 +8,7 @@ type ModalProps = ComponentProps<typeof Modal>
 type ModalOptions = Omit<ModalProps, 'open'>
 
 interface ModalContextValue {
-  open: (oprions: ModalProps) => void
+  open: (options: ModalOptions) => void
   close: () => void
 }
 
@@ -21,7 +21,7 @@ const defaultValues: ModalProps = {
   onLeftButtonClick: () => {},
 }
 
-function ModalContext({ children }: { children: React.ReactNode }) {
+export function ModalContext({ children }: { children: React.ReactNode }) {
   const [modalState, setModalState] = useState<ModalProps>(defaultValues)
 
   const $portal_root = document.getElementById('root_portal')
@@ -47,4 +47,14 @@ function ModalContext({ children }: { children: React.ReactNode }) {
         : null}
     </Context.Provider>
   )
+}
+
+export function useModalContext() {
+  const values = useContext(Context)
+
+  if (values == null) {
+    throw new Error('ModalContext 안에서 사용해주세요.')
+  }
+
+  return values
 }

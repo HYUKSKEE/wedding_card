@@ -199,13 +199,7 @@ function IconClipboard() {
       <title />
       <desc />
       <defs />
-      <g
-        fill="none"
-        fill-rule="evenodd"
-        id="Page-1"
-        stroke="none"
-        stroke-width="1"
-      >
+      <g fill="none" stroke="none" strokeWidth="1">
         <g
           fill="#000000"
           id="Core"

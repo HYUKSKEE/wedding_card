@@ -6,7 +6,7 @@ const cx = classNames.bind(styles)
 
 interface ModalProps {
   open: boolean
-  title: string
+  title?: string
   body: React.ReactNode
   rightButtonLabel?: string
   leftButtonLabel?: string
