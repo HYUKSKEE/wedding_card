@@ -26,7 +26,7 @@ function AttendCountModal({ weddingData }: { weddingData: Wedding }) {
         </div>
       ),
       onLeftButtonClick: () => {
-        localStorage.setItem('@have-seen-modal', 'true')
+        localStorage.setItem('@have-seen-modal', 'false')
         close()
       },
       onRightButtonClick: () => {
