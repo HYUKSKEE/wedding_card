@@ -13,7 +13,6 @@ function AttendCountModal({ weddingData }: { weddingData: Wedding }) {
     if (haveSeenModal === 'true') {
       return
     }
-    console.log('attendCount')
     open({
       title: `현재 참석자: ${weddingData.attendCount} 명`,
       body: (
